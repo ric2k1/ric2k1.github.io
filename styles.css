@@ -11,7 +11,11 @@
 }
 
 .brand {
-    display: inline;
+    display: flex;
+    width: 100vw;
+    color: #dbe7eb;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-bar {
@@ -95,7 +99,7 @@
 }
 
 .post-header {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     align-self: flex-start; /* overwrite parent's allignments */
 }
 
