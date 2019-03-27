@@ -660,6 +660,145 @@
             <div class="post">
                 <h2 class="post-header">Week #6 More on React.js (03/27)</h2>
                 <hr />
+                <h3>Lecture Notes</h3>
+                <ul class="single-list">
+                    <li>
+                        Administrative Information [<a href="." target="_blank"
+                            >slides</a
+                        >]
+                    </li>
+                    <li>
+                        More on React.js [<a
+                            href="https://hackmd.io/p/B1otLyN_4#/"
+                            target="_blank"
+                            >slides</a
+                        >]
+                    </li>
+                </ul>
+                <h3>
+                    Pracrice04 -- TODO List in React.js
+                </h3>
+                <ul class="single-list">
+                    <li>
+                        Directory structures (also for Practice05)
+                        <ul>
+                            <li>
+                                先在 <em>WebProg2019</em> 底下開個
+                                <em>Practice04</em> and
+                                <em>Practice05</em> 目錄，然後再各自底下用
+                                create-react-app 產生 <em>“own”</em> project
+                                目錄
+                            </li>
+                            <li>手動產生一個空目錄 <em>review</em></li>
+                            <li>
+                                HTML 的 entry 在 <em>public/index.html</em>,
+                                然後 JaveScript 的在
+                                <em>src/index.js</em>。把主要邏輯操作的
+                                components 放在
+                                <em>src/containers</em>
+                                目錄，然後把一些沒有什麼邏輯，主要只是 render
+                                畫面的 components 放在
+                                <em>src/components</em> 目錄下面。
+                            </li>
+                            <li>
+                                Make sure 在 own 底下執行
+                                <em>npm start</em> 可以開啟你的
+                                project，並且記得把 <em>node_modules</em> 加到
+                                <em>.gitignore</em>, 不要上傳到 github.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>就是把你 Homework01 的 TODO list 用 React 重寫一遍!</li>
+                    <li>
+                        練習重點：
+                        <ul>
+                            <li>
+                                跟著 "<a
+                                    href="https://reactjs.org/docs/thinking-in-react.html"
+                                    >"Thinking in React</a
+                                >" 思考一遍，create 適當的 classes。
+                            </li>
+                            <li>What are the states?</li>
+                            <li>How do you add inverse data flow?</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Practice submission deadline:
+                        <em>9pm, Sunday, 03/31</em>
+                    </li>
+                    <li>Review deadline: <em>9pm, Tuesday, 04/02</em></li>
+                </ul>
+                <h3>
+                    Pracrice05 -- Calculator in React.js
+                </h3>
+                <ul class="single-list">
+                    <li>
+                        請下載 starter's src from [<a
+                            href="https://github.com/ric2k1/ric2k1.github.io/blob/master/W6_0327/practice/calculator-starter/src.tgz"
+                            >here</a
+                        >]
+                    </li>
+                    <li>
+                        Copy to your <em>Practice05/own</em>, decompress it to
+                        replace the original <em>src</em>
+                    </li>
+                    <li>
+                        Implement under <em>src/{containers,components}</em>.
+                    </li>
+                    <li>
+                        <em>npm start</em> to run, and <em>npm test</em> for
+                        auto testing
+                    </li>
+                    <li>
+                        利用提供的 CSS 做出來的 Calculator 長這樣：[<a
+                            href="https://camo.githubusercontent.com/87ea4a738b93c32bc6a6c50c941b5a1d7163ffea/68747470733a2f2f7075752e73682f78336963582f323630303431643439342e706e67"
+                            >here</a
+                        >]
+                    </li>
+                    <li>
+                        請注意 '0' 那格是兩倍大，請選用適當的 class 以利 npm
+                        test
+                    </li>
+                    <li>
+                        功能要求說明
+                        <ul>
+                            <li>
+                                進階功能(可以不用做) —
+                                正負號(+/-)、百分比(%)、小數點(.)
+                                這三個按鍵只需要有 UI，不需要功能
+                            </li>
+                            <li>
+                                重置計算機 — AC (all clear)
+                                按鍵，需要可以把計算狀態 (state) 全清空
+                            </li>
+                            <li>
+                                數字按鍵 —
+                                會跟一般計算機一樣按了會累積之後要當運算元的數字。例如依序按下
+                                6, 1, 9, 8，會產生 6198 來當作運算元
+                            </li>
+                            <li>
+                                因為不實作小數當作運算元，所以第一個數字按零可以忽略
+                            </li>
+                            <li>
+                                運算子按鍵 (+, -, x, ÷, =) --- 如果前面已經有
+                                pending 的運算則先把前面的運算求值：按下 3, +,
+                                6：這時候畫面還是 6，但再按(+, -, x, ÷,
+                                =)任何一個就會更新運算結果；如果前面也是運算子，新的運算子會把舊的換掉；按下
+                                3, +, -, 1, =：這時候結果為 2，+ 會被 -
+                                換掉；如果前面是運算元，則先 pending 存至 state
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Practice submission deadline:
+                        <em>9pm, Sunday, 04/07</em>
+                    </li>
+                    <li>Review deadline: <em>9pm, Tuesday, 04/09</em></li>
+                </ul>
+                <h3>After-Class Readings --- React Tutorials</h3>
+                <ul class="single-list">
+                    <li></li>
+                </ul>
             </div>
             <div class="post">
                 <h2 class="post-header">
